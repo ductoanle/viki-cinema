@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-
+group :development do
+	gem 'jazz_hands'
+end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
