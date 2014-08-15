@@ -1,2 +1,2 @@
-class CinemaController < ApplicationController
+class CinemasController < ApplicationController
 end

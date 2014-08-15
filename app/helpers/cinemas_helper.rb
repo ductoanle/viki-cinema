@@ -1,2 +1,2 @@
-module CinemaHelper
+module CinemasHelper
 end
