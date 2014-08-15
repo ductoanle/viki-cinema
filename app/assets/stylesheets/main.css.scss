@@ -1,0 +1,19 @@
+body {
+  background-color: #000;
+}
+
+.mainbar {
+  background-color: #23a7cf;
+  height: 50px;
+  border-bottom: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  @include transform(translateZ(0));
+
+  .logo {
+    margin: 4px 0 0 30px;
+  }
+}
