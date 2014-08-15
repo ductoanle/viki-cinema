@@ -1,4 +1,4 @@
 class Show < ActiveRecord::Base
-	belongs_to :cinema
+	has_many :cinema
 	validates_presence_of :name, :player_url, :number
 end
