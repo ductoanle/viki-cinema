@@ -1,10 +1,10 @@
 class CinemasController < ApplicationController
 	before_filter :find_cinema, only: [:show, :ping]
 	def index
-		@cinemas = Cinema.active 
+		@cinemas = Cinema.active
 	end
 
-	def show 
+	def show
 	end
 
 	def ping
@@ -15,7 +15,7 @@ class CinemasController < ApplicationController
 			render json: {time: -1}
 		end
 	end
-	
+
 	private
 	def find_cinema
 		@cinema = Cinema.find_by_id(params[:id])
