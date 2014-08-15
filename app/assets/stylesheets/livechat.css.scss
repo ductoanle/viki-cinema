@@ -1,9 +1,77 @@
 .chat {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #fff;
   background: #56565b;
   position: fixed;
   right: 0;
   top: 0;
   bottom: 0;
-  width: 400px;
+  width: 250px;
   z-index: 5;
+  letter-spacing: 1px;
+
+  .info {
+    border-bottom: 4px solid #3a3a3d;
+  }
+
+  .chat-wrapper {
+    margin: 80px 0 24px 15px;
+  }
+
+  .chatter {
+
+  }
+
+  .viewer-stat {
+    background-color: #79797c;
+    border-right: 3px solid #abcb58;
+    padding: 8px;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  span.viewers {
+    margin-bottom: 10px;
+    display: block;
+
+    &:before {
+      content: "";
+      border-radius: 50%;
+      width: 13px;
+      height: 13px;
+      display: inline-block;
+      margin-right: 10px;
+      background-color: #f5f7f7;
+    }
+  }
+
+  span.viewers:nth-child(1) {
+    &:before {
+      background-color: #e95657;
+    }
+  }
+
+  span.viewers:nth-child(2) {
+    &:before {
+      background-color: #32a6d9;
+    }
+  }
+
+  span.viewers:nth-child(3) {
+    &:before {
+      background-color: #abcb58;
+    }
+  }
+
+  span.viewers:nth-child(4) {
+    &:before {
+      background-color: #e95657;
+    }
+  }
 }
