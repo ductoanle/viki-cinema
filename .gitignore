@@ -7,3 +7,4 @@
 .rvmrc
 .ruby-version
 .ruby-gemset
+*.sqlite3
