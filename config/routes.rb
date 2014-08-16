@@ -14,7 +14,9 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :cinemas, only: [:index, :show] do
 		member do
-			get 'ping'
+      constraints(format: "json") do
+        get 'ping'
+      end
 		end
 	end
 

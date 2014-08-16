@@ -9,7 +9,7 @@ class CinemasController < ApplicationController
 
 	def ping
 		if @cinema.is_active?
-			time_lapsed = ((Time.now - @cinema.show_time)* 24 * 60 * 60).to_i
+			time_lapsed = (Time.now - @cinema.show_time).to_i
 			render json: {time: time_lapsed}
 		else
 			render json: {time: -1}
