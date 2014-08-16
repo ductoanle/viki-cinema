@@ -5,20 +5,16 @@
 
 <div class="chat">
   <div class="info">
-    <div class="chat-wrapper">
-      <h1>Viewers</h1>
-      <span class="viewers">Aysha</span>
-      <span class="viewers">Fadhli</span>
-      <span class="viewers">Ethan</span>
-      <span class="viewers">Neerav</span>
-    </div>
+
   </div>
-  <div class="chatter">
-    <p class="viewer-stat">Fadhli joined the room.</p>
-    <p class="viewer-stat">Aysha joined the room.</p>
-  </div>
+
+  <iframe src="http://localhost:3000?channel=<%= @cinema.id %>" width="250" height="95%" frameBorder="0"></iframe>
+
 </div>
 <div class="player">
   <!-- Change size here, for now. I am working on making it responsive -->
   <iframe src="<%= @cinema.show.player_url %>" width="2156" height="1203" frameBorder="0"></iframe>
 </div>
+
+
+
