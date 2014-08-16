@@ -1,5 +1,6 @@
 body {
-  background-color: #000;
+  background-color: #f5f5f5;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .mainbar {
@@ -18,10 +19,25 @@ body {
   }
 
   .now-watching {
-    font-family: 'Roboto Condensed', sans-serif;
     float: right;
     font-size: 25px;
     color: #fff;
     padding: 15px 35px 0 0;
   }
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }

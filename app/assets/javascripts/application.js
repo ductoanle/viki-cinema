@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require cinemas
 //= require player
+//= require readmore.min
+//= require cinemas
 //= require_tree .

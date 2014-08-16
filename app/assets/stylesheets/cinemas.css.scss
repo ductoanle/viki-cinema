@@ -16,3 +16,94 @@
     height: 100%;
   }
 }
+
+.btn {
+  border-collapse: collapse;
+  border: 1px solid #b9c1c7;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roboto, "Helvetica Neue", "Lucida Grande", Helvetica, Arial, "Liberation Sans", Freesans, sans-serif;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0;
+  outline: none !important;
+  font-size: 13px;
+  padding: 4px 12px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  vertical-align: top;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.btn-watch {
+  background-color: #7fc73a;
+  border-color: #7fc73a;
+}
+
+.cinema-list {
+  margin-top: 100px;
+}
+
+ul.cinema {
+  width: 900px;
+  list-style-type: none;
+
+  li {
+    display: block;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 2px;
+    background: white;
+    box-shadow: 0 2px 1px rgba(170,170,170,0.25);
+    overflow: hidden;
+    color: #333;
+    min-height: 150px;
+  }
+
+  .thumbnail {
+    margin-right: 15px;
+    margin-top: 9px;
+    float: left;
+  }
+
+  .cinema-info {
+    margin-bottom: 5px;
+  }
+
+  .info {
+    background-color: #e6e6e6;
+    border: 1px solid #d4d4d4;
+    color: #4d4d4d;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 13px;
+    margin: 2px 3px 5px 2px;
+    padding: 4px 8px;
+    position: relative;
+    top: -2px;
+    border-radius: 2px;
+  }
+
+  .buttons {
+    float: right;
+    margin-top: 15px;
+  }
+}
+
+.readmore-js-section {
+  overflow: hidden;
+}
+
+.readmore-js-toggle {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #428bca;
+  text-decoration: none;
+  font-size: 14px;
+}
