@@ -10,7 +10,7 @@ $(document).ready(->
 			element = $(element)
 			
 			if trigger
-				element.removeClass('readmore-js-section').css('margin-bottom', '30px')
+				element.removeClass('readmore-js-section').css('margin-bottom', '20px')
 
 			if !expanded
 				element.addClass('readmore-js-section').css('margin-bottom', '5px')
