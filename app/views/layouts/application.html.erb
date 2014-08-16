@@ -8,6 +8,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="mainbar">
+  <%= image_tag("viki-logo.png", :class => "logo") %>
+  <% if @show_title.present? %>
+  	<h1 class="now-watching"> Now watching - <%= @show_title %></h1>
+  <% end %>
+</div>
 
 <%= yield %>
 

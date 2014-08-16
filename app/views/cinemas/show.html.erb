@@ -24,18 +24,11 @@
         window.player.playVideo();
     })
 <% end %>
-<div class="mainbar">
-  <%= image_tag("viki-logo.png", :class => "logo") %>
-  <h1 class="now-watching">Now watching - <%= @cinema.show.name %></h1>
-</div>
 
 <div class="chat">
   <div class="info">
-
   </div>
-
   <iframe src="http://localhost:3000?channel=<%= @cinema.id %>" width="250" height="95%" frameBorder="0"></iframe>
-
 </div>
 <%
    flash_config = {
