@@ -52,6 +52,7 @@
 
 ul.cinema {
   width: 900px;
+  margin-bottom: 30px;
   list-style-type: none;
 
   li {
@@ -64,6 +65,7 @@ ul.cinema {
     overflow: hidden;
     color: #333;
     min-height: 150px;
+    margin-bottom: 30px;
   }
 
   .thumbnail {
