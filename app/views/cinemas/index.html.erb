@@ -2,7 +2,7 @@
 	<div class="cinema-list">
 		<h1 class="header-title">Cinema List</h1>
 		<ul class="cinema">
-			<% @showtimes.each do |cinema| %>
+			<% @cinemas.each do |cinema| %>
 				<li>
 					<%= image_tag(cinema.show.image_url, class: 'thumbnail', size: "220x123") %>
 					<div class="cinema-info">
@@ -11,11 +11,20 @@
 								<%= "- Episode #{cinema.show.number}" %>
 							<% end %>
 						</h1>
-						<span class="info">Start time - <%= cinema.show_time.strftime('%I:%M %p') %></span>
-						<span class="info">Cinema Name - <%= cinema.name %></span>
+						<% if (cinema.show_time < Time.now) %>
+							<span class="info info-live">Now Showing</span>
+						<% else %>
+							<span class="info info-coming">Start in <%= duration(cinema.show_time - Time.now) %></span>
+						<% end %>
+						<span class="info info-hall"><%= cinema.name %></span>
 						<p><%= cinema.show.description %></p>
 					</div>
-					<div class="buttons"><a class="btn btn-watch" href="<%= cinema_path(cinema) %>">Watch Now</a></div>
+					<% if cinema.show_time < Time.now %>
+						<div class="buttons"><a class="btn btn-watch" href="<%= cinema_path(cinema) %>">Watch Now</a></div>
+					<% else %>
+						<div class="buttons btn btn-coming-soon">Coming Soon<div>
+
+					<% end %>
 				</li> 
 			<% end %>
 		</ul>

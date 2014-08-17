@@ -46,6 +46,11 @@
   border-color: #7fc73a;
 }
 
+.btn-coming-soon{
+	background-color: #f5730b;
+	border-color: #f5730b;
+}
+
 .cinema-list {
   margin-top: 100px;
 }
@@ -79,9 +84,7 @@ ul.cinema {
   }
 
   .info {
-    background-color: #e6e6e6;
     border: 1px solid #d4d4d4;
-    color: #4d4d4d;
     display: inline-block;
     font-size: 13px;
     font-weight: normal;
@@ -93,6 +96,20 @@ ul.cinema {
     border-radius: 2px;
   }
 
+	.info-hall{
+    color: #4d4d4d;
+		background-color: #e6e6e6;
+	}
+
+	.info-live{
+    color: white;
+		background-color: #7fc73a;
+	}
+
+	.info-coming{
+    color: white;
+		background-color: #f5730b;
+	}
   .buttons {
     float: right;
     margin-top: 15px;

@@ -2,7 +2,6 @@ class CinemasController < ApplicationController
 	before_filter :find_cinema, only: [:show, :ping]
 	def index
 		@cinemas = Cinema.active
-		@showtimes = Cinema.all
 	end
 
 	def show

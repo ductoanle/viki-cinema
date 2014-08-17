@@ -21,7 +21,6 @@
             });
         }, 1000);
         window.player.init();
-        window.player.playVideo();
     })
 <% end %>
 
@@ -34,12 +33,12 @@
    flash_config = {
            plugins: {
                    api: {
-                           autoplay: params["autoplay"].present? && params["autoplay"] == 'false' ? false : true,
-                           autostart: params["autostart"].present? && params["autostart"] == 'false' ? false : true,
-                           discussions: params["discussions"] || "on",
-                           subtitles: params["subtitles"] || "on",
-                           show_comments: params["show_comments"].present? && params["show_comments"] == 'false' ? false : true,
-                           show_subtitles: params["show_subtitles"].present? && params["show_subtitles"] == 'false' ? false : true,
+                           autoplay: true,
+                           autostart: true,
+                           discussions: "off",
+                           subtitles: "on",
+                           show_comments: false,
+                           show_subtitles: true,
                            chromeless: params["chromeless"].present? ? params["chromeless"] == "true": false,
                            timestamp: Time.now.to_i,
                            playlist: [@cinema.show.player_url],
