@@ -3,7 +3,7 @@
         setInterval(function(){
             $.ajax({
                 type: "GET",
-                url: "http://localhost:3000/cinemas/<%= @cinema.id %>/ping",
+                url: "/cinemas/<%= @cinema.id %>/ping",
                 dataType: "JSON"
             }).success(function(msg) {
                 var result = $.parseJSON(JSON.stringify(msg));
