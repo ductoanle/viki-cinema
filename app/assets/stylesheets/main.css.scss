@@ -26,6 +26,21 @@ body {
   }
 }
 
+.title {
+  width: 200px;
+  display: block;
+}
+
+.sub-title {
+  font-weight: 300;
+  font-size: 32px;
+  margin-top: 8px;
+  margin-right: 9px;
+  color: #fff;
+  display: block;
+  float: right;
+}
+
 .container {
   width: 960px;
   margin: auto;
