@@ -12,7 +12,7 @@
 <div class="mainbar">
   <div class="title">
     <%= link_to image_tag("viki-logo.png", :class => "logo"), root_path() %>
-    <span class="sub-title">Cinema</span>
+    <span class="sub-title"><%= link_to "Cinema", root_path() %></span>
   </div>
   <% if @show_title.present? %>
   	<h1 class="now-watching"> Now watching - <%= @show_title %></h1>

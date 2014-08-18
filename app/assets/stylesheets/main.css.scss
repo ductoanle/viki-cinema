@@ -22,13 +22,19 @@ body {
     float: right;
     font-size: 25px;
     color: #fff;
-    padding: 15px 35px 0 0;
+    margin-top: 10px;
+    margin-right: 16px;
   }
 }
 
 .title {
   width: 200px;
-  display: block;
+  display: inline-block;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .sub-title {
